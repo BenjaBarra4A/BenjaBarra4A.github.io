@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Platypi", sans-serif;
+}
+body{
+    height: 100vh;
+    background: #486670;
+}
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+}
+.Navbar ul{
+    display: flex;
+}
+.Navbar ul li{
+    list-style: none;
+}
+.Navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+}
+.Navbar ul li:hover a{
+    color: rgb(197, 155, 57);
+}
+.Navbar ul li:last-child a{
+    margin: 0;
+}
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 640px;
+}
+.presentacion p{
+    font-size: 16px;
+}
+.presentacion h4{
+    font-size: 26px;
+}
+.presentacion img{
+    width: 380px;
+    height: 380px;
+}
+.logros{
+    margin-top: 50px;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+.logros .logro {
+    background-color: #6a8994;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.logros .logro:hover{
+    background-color: #38788d;
+}
+.logros .logro .icon{
+    background-color: #fff;
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logros .logro:hover .icon{
+    background-color: rgba(172, 235, 227, 0.418);
+}
+.logros .logro i{
+    font-size: 30px;
+}
+.logros .logro .info h4{
+    color: rgb(197, 155, 57);
+    font-size: 28px;
+}
+.logros .logro .info p{
+color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.separador{
+    margin: 50px 50px 30px;
+    padding: 10px 20px;
+    background-color: rgba(255,255,255,0.08);
+    display: inline-block;
+    color: #ffb742;
+    border-radius: 12px;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about img{
+    width: 280px;
+    border-radius: 50%;
+}
+.Habilidades{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.derecha{
+    display: flex;
+    align-items: center;
+}
+.derecha i{
+    display: flex;
+    font-size: 100px;
+}
+
+@media (max-width:412px) {
+    body{
+        width: 100%;
+    }
+    .Navbar{
+        display: flex;
+        width: 140%;
+        justify-content: space-between
+    }
+    .Navbar h2{
+        display: none;
+    }
+    .Navbar ul li a{
+        display: block;
+        border: rgba(255,255,255,0.2) 1px solid;
+        border-radius: 5px;
+        font-size: 10px;
+        margin-right: 14px;
+        font-weight: 200;
+    }
+    .presentacion{
+        display: flex;
+    }
+    .presentacion p{
+        font-size: 12px;
+        margin-left: 15px;
+    }
+    .presentacion h4{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .presentacion img{
+        width: 180px;
+        height: 180px;
+        margin-left: 15px;
+    }
+    .logros{
+        display: inline-block;
+        width: 105%;
+    }
+    .logros .logro {
+        margin-top: 15px;
+    }
+    .logros .logro i{
+        font-size: 25px;
+    }
+    .logros .logro .info h4 {
+        text-align: center;
+        font-size: 20px;
+    }
+    .logros .logro .info p{
+        font-size: 12px;
+    }
+    .about img{
+        display: flex;
+        width: 180px;
+        margin-left: 100px;
+        align-items: center;
+    }
+    .about{
+        display: flex;
+        margin-top: 10px;
+        text-align: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    .Habilidades{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .derecha{
+        display: flex;
+        align-items: center;
+    }
+    .derecha i{
+        display: flex;
+        font-size: 100px;
+    }
+    .about .infoM{
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .infoM{
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+    }
+    .infoM h3{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-size: medium;
+    }
+    .infoM p{
+        display: block;
+        font-size: 15px;
+    }
+    .Habilidades{
+        flex-direction: column;
+        display: flex;
+        font-size: 15px;
+    }
+    .derecha{
+        display: block;
+        margin-top: 15vh;
+        margin-right: 30vw;
+        width: 10px;
+    }
+    .derecha i{
+    }
+
+}

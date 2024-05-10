@@ -1,0 +1,25 @@
+<div class="sobreMi">
+        <h3>Benjamín Lionel Barra Díaz</h3>
+        <p class="biografia">Soy Benjamín Barra estudiante de Programacion y</p>
+        <p class="biografia">estoy cursando 4°to Medio en el Instituto Comercial Osorno</p>
+        <p class="biografia">y este año podre conseguir 2 Certificaciones de las cuales ya consegui una.</p>
+        <p class="biografia">El curso es Patrocinado por CodingDojo Academy</p>
+        <img src="img/IMG_20240425_190816_638.jpg">
+    </div>
+
+
+    ------------------------------------------------------------------------------------------------------------------
+
+
+    
+.sobreMi{
+    display: flex;
+    flex-direction: column;
+}
+.sobreMi p{
+    display: flex;
+}
+.sobreMi img{
+    width:  280px;
+    height: 280px;
+}
